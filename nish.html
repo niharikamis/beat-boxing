@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<script type="text/javascript">
+function voice(i)
+{
+i=i+".mp3";
+var beat=document.getElementById(i);
+beat.play();
+//beat.controls=;
+}
+
+
+function pause(i)
+{
+i=i+".mp3"
+var beat=document.getElementById(i);
+beat.pause();
+}
+
+
+function loop(i)
+{
+event.preventDefault();
+i=i+".mp3"
+var beat=document.getElementById(i);
+beat.loop=true;
+}
+
+</script>
+
+
+<style>
+body{
+background-color: black;
+}
+input[type=button]
+{   position:absolute;
+ border-radius: 100%;
+     color:snow;
+	 border: 5px solid black;
+	 background-color:black;
+	 width:100px;
+	 height:100px;
+	 float:left;
+	 
+}
+input[type=button]:hover 
+{  border: 5px solid snow;
+}
+
+table.demo-3{
+    position:relative;
+    overflow:hidden;
+    margin-left:25%;
+    margin-right:20px
+    
+}
+td{    
+width:180px;
+    height:180px;}
+.demo-3 figure {
+
+    margin:0;
+    padding:0;
+    width:180px;
+    height:180px;
+    cursor:pointer;
+	margin-left:20px;
+	margin-right:20px;
+}
+.demo-3 figure img {
+   position:absolute; 
+    z-index:10;
+	width:180px;
+	height:180px;
+		
+}
+
+.demo-3 figure figcaption {
+    position:absolute;
+    z-index:5;
+width:180px;
+    height:180px;
+    background-color:rgb(0,51,102);
+    text-align:center;
+	color:white;
+	font-family:century gothic;
+	font-size:25px;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo-3 figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.demo-3 figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.demo-3 figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+</style></head>
+
+
+<body>
+<fieldset>
+<legend style="color:white"><mark style="background-color:snow;font-size:20px">KEEP CALM AND BEAT PEOPLE</mark></legend>
+<table class="demo-3">
+    <tr>"
+     <td id="b1" ondblclick="pause(this.id)" oncontextmenu="loop(this.id)"  onclick="voice(this.id);">
+   <figure>
+            <img src="ar1.jpg" alt=""/>
+            <figcaption>
+			
+			
+			
+			
+			
+            BEAT ONE
+		</figcaption>
+        </figure>
+    </td>
+    <td id="b2" ondblclick="pause(this.id)" oncontextmenu="loop(this.id)"   onclick="voice(this.id);">
+        <figure>
+            <img src="ar2.jpg" alt=""/>
+            <figcaption>
+            BEAT TWO</figcaption>
+        </figure>
+    </td>
+    <td id="b3" ondblclick="pause(this.id)" oncontextmenu="loop(this.id)"  onclick="voice(this.id);">
+        <figure>
+            <img src="ar3.jpg" alt=""/>
+            <figcaption>
+            BEAT THREE</figcaption>
+        </figure>
+    </td>
+    <tr>
+	<td id="b4" ondblclick="pause(this.id)" oncontextmenu="loop(this.id)"   onclick="voice(this.id);">
+        <figure>
+            <img src="ar3.jpg" alt=""/>
+            <figcaption> BEAT FOUR
+            </figcaption>
+        </figure>
+    </td>
+    <td id="b5" ondblclick="pause(this.id)" oncontextmenu="loop(this.id)"  onclick="voice(this.id);">
+        <figure>
+            <img src="ar1.jpg" alt=""/>
+            <figcaption>
+            BEAT FIVE</figcaption>
+        </figure>
+    </td>
+    <td id="b6" ondblclick="pause(this.id)" oncontextmenu="loop(this.id)"  onclick="voice(this.id);">
+        <figure>
+            <img src="ar2.jpg" alt=""/>
+            <figcaption>
+            BEAT SIX</figcaption>
+        </figure>
+    </td>
+    </tr>
+	<tr>
+	<td id="b7" ondblclick="pause(this.id)" oncontextmenu="loop(this.id)"  onclick="voice(this.id);">
+        <figure>
+            <img src="ar2.jpg" alt=""/>
+            <figcaption>
+           BEAT SEVEN</figcaption>
+        </figure>
+    </td>
+    <td id="b8" ondblclick="pause(this.id)" oncontextmenu="loop(this.id)"   onclick="voice(this.id);">
+        <figure>
+            <img src="ar3.jpg" alt=""/>
+            <figcaption>
+            BEAT EIGHT</figcaption>
+        </figure>
+    </td>
+    <td id="b9" ondblclick="pause(this.id)" oncontextmenu="loop(this.id)"  onclick="voice(this.id);">
+        <figure>
+            <img src="ar1.jpg" alt=""/ >
+            <figcaption>
+            BEAT NINE
+	   
+	     </figcaption>
+        </figure>
+    </td>
+</tr></ul>
+</fieldset>
+
+<input onclick='responsiveVoice.speak("You can make your own music here, so what are you waiting for? Unleash your creativity! Click to play, double click to pause, and right click to loop!Enjoy!");' type='button' value= "TUTORIAL" />
+<audio id="b9.mp3" src="tune1.wav" type="audio/wav"></audio>
+<audio id="b8.mp3" src="tune11.wav" type="audio/wav"></audio>
+<audio id="b7.mp3" src="tune10.wav" type="audio/wav"></audio>
+<audio id="b6.mp3" src="tune4.wav" type="audio/wav" ></audio>
+<audio id="b5.mp3" src="tune2.wav" type="audio/wav"></audio>
+<audio id="b4.mp3" src="tune3.wav" type="audio/wav"></audio>
+<audio id="b3.mp3" src="tune7.wav" type="audio/wav" ></audio>
+<audio id="b2.mp3" src="tune8.wav"type="audio/wav"></audio>
+<audio id="b1.mp3" src="tune9.wav" type="audio/wav"></audio>
+</audio>
+</html>
+
+
+
+
