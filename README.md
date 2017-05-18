@@ -1,2 +1,2 @@
-# html-project
+# beat-boxing
 open nish.html
